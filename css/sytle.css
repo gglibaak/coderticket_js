@@ -1,0 +1,471 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+ }
+
+a {
+    text-decoration: none;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+  }
+
+ header {
+    background-color: white;
+    height: 3.5rem;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+ }
+
+ header a {
+     padding: 2rem;
+     
+     font-size: 1.9rem;
+     color: #150920;
+     font-style: italic;
+     font-weight: 600;     
+ }
+
+ header a span {
+     color: #CC3A01;
+     font-weight: 800;
+ }
+
+
+ nav ul{
+     display: flex;
+     text-transform: uppercase;
+     font-weight: 500;
+     color: #150920;
+     padding: 2rem;
+ }
+
+ nav ul li {
+     list-style: none;
+     padding-left: 1.5rem;
+ }
+ nav ul li:hover {
+    color: #CC3A01;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+
+ .titulo {
+     text-align: center;
+     padding-top: 80px;
+     padding-bottom: 30px;
+     text-transform: capitalize;
+     font-size: 0.9rem;
+ }
+
+ .eventos {
+    width: 100%;
+    max-width: 150vh;
+    margin: 50px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, auto); }
+  
+  .eventos__cards {
+    height: 400px;
+    width: 280px;
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); }
+
+ /* Cards info*/
+.eventos__cards--info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all 0.5s;
+    background: #000000; }
+  
+  .eventos__cards--title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700; }
+  
+  .eventos__cards--date {
+    text-transform: capitalize;
+    font-size: 15px;
+    margin: 5px; }
+  
+  .eventos__cards--place {
+    text-transform: capitalize;
+    font-size: 12px;
+ }
+  
+  .eventos__cards--uppercase {
+    text-transform: uppercase;
+ }
+  
+  .eventos__cards--info:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+ }
+  
+  .eventos__cards--img1:hover,
+  .eventos__cards--img2:hover,
+  .eventos__cards--img3:hover,
+  .eventos__cards--img4:hover,
+  .eventos__cards--img5:hover,
+  .eventos__cards--img6:hover,
+  .eventos__cards--img7:hover,
+  .eventos__cards--img8:hover,
+  .eventos__cards--img9:hover,
+  .eventos__cards--img10:hover,
+  .eventos__cards--img11:hover,
+  .eventos__cards--img12:hover {
+    transform: scale(1.1);
+ }
+  
+  .eventos__cards--button {
+    color: #CC3A01;
+    margin: 10px;
+    padding: 5px 5px;
+    background-color: #ffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    text-transform: capitalize;
+    transition: all 0.3s;
+ }
+  
+  .eventos__cards--button:hover {
+    background-color: #CC3A01;
+    color: #ffff;
+ }
+  
+  /* Cards Imagenes */
+  .eventos__cards--img1 {
+    background-image: url("../assets/event_inxs.jpg"); }
+  
+  .eventos__cards--img2 {
+    background-image: url("../assets/event_queen.jpg"); }
+  
+  .eventos__cards--img3 {
+    background-image: url("../assets/event_direstraits.jpg"); }
+  
+  .eventos__cards--img4 {
+    background-image: url("../assets/event_acdc.jpg"); }
+   
+  .eventos__cards--img1,
+  .eventos__cards--img2,
+  .eventos__cards--img3,
+  .eventos__cards--img4 {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all 0.3s;
+ }
+ .searchEvent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+  
+  .searchEvent__icon {
+    margin-right: 15px;
+    transition: all 0.2s;
+    cursor: pointer; 
+}
+  
+  .searchEvent__icon:hover {
+    color: #CC3A01; 
+}
+
+.searchEvent__input {
+    width: 20%;
+    height: 30px;
+    padding: 3px 10px;
+    border: 1px solid #f6f6f6;
+    border-radius: 8px;
+    background-color: #f6f6f6;
+    margin: 8px 0;
+    display: inline-block;
+    font-size: 13px; 
+}
+
+.footer{
+  background-color: #150920;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  color: white;
+  margin-top: 50px;
+ }
+
+ .footer--title { 
+    margin-top: 10px;
+ }
+ .footer--subtitle,
+ .footer--title {
+    color: #f6f6f6;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .eventInfo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .eventInfo--icon{
+   margin-right: 5px;
+ }
+
+ .eventInfo--eventName,
+ .eventInfo--eventPlace,
+ .eventInfo--eventDate {
+   margin-right: 25px;
+ }
+
+ .eventInfo--eventName span,
+ .eventInfo--eventPlace span,
+ .eventInfo--eventDate span {
+   font-weight: 900;
+ }
+ 
+ h3 {
+  padding-top: 20px;
+  text-align: center;
+ }
+
+ .stage {
+  margin: 30px auto;
+  width: 250px;
+  height: 30px;
+  background-color: #000000;
+  color: #f6f6f6;
+  text-transform: uppercase;
+  display:flex;
+  justify-content: center;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); 
+  border-radius: 3px;
+ }
+
+ .seatSelectorContainer {
+   width: 550px;
+   height: 150px;
+   /* background-color: aqua; */
+   display: grid;
+   align-items: center;
+   margin-left: 30px;
+   grid-template-columns: repeat(10, 1fr);
+   grid-template-rows: repeat(3, auto); 
+   margin: auto;
+ }
+
+ .seatSelectorContainer--seat {
+   text-align: center;
+   color: white;
+   height: 25px;
+   width: 25px;
+   border-radius: 50%;
+   background-color: coral;
+   margin-left: 15px;
+   cursor: pointer;
+ }
+
+.seat-Sold {
+    background-color: rgb(214, 214, 214);  
+    cursor: default;
+}
+
+.seatSelectorContainer--seat:not(.seat-Sold):hover {
+  opacity: 2;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); 
+  transition: all 0.3s;  
+}
+
+.seat-Selected {
+  background-color: rgb(66, 69, 238);
+}
+
+ .detail {   
+   text-align: center;
+   margin-bottom: 30px;   
+ }
+
+ .detail--qty span,
+ .detail--seat span,
+ .detail--Monto span,
+ .detail--SC span,
+ .detail--total span {
+   font-weight: 800;
+ }
+
+ .buyBtn {
+   height: 70px;
+   width: 225px;
+   background-color: #CC3A01;
+   color: white;
+   margin: auto;
+   text-align: center;
+   padding-top: 20px; 
+   font-weight: 900;
+   text-transform: uppercase;
+ }
+
+ .buyBtn:hover {
+   cursor: pointer;
+  background-color: #eb5e26;
+  transition: all 0.3s;
+}
+
+
+.event-img {
+  height: 250px;
+  width: 100%;
+  background: url(../assets/event_inxs.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); 
+}
+
+.payMethod {
+display: grid;
+margin: 50px 0;
+}
+
+.payMethod--1,
+.payMethod--2,
+.payMethod--3 {
+  width: 300px;
+  height: 400px;
+  grid-column-start: span 3;
+  grid-row-start: 1;
+  justify-content: center;
+  margin: auto;
+  border: 5px solid #CC3A01;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+
+.payMethod--1:hover,
+.payMethod--2:hover,
+.payMethod--3:hover {
+ cursor: pointer;
+ background-color: #CC3A01;
+ color: white;
+ box-shadow: 0 10px 20px rgba(0, 0, 0, 0.068), 0 6px 6px rgba(0, 0, 0, 0.062); 
+}
+
+.payMethod--selected {
+  background-color: #76c26c;
+  color: white;
+  border: 5px solid #33572e;
+}
+
+.payMethod--selected:hover {
+  background-color: #6fdf60;
+}
+
+
+
+.payMethod--p {
+  font-size: 1.6em;
+  font-weight: 800;
+  text-align: center;
+  
+}
+
+.payMethod--li {
+  list-style: none;
+  text-align: center;
+  font-weight:600;
+}
+
+label {
+  display: block;
+  position: absolute;
+  top:-80px;
+  right: 20px;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 480px) {
+  
+   li {
+    display: none;
+  }
+
+  label {
+    display: block;
+    position: absolute;
+    top:8px;
+    right: 20px;
+    font-size: 30px;
+  }
+
+  .searchEvent {
+    margin-bottom: 50px;
+  }
+  .searchEvent__input {
+    width: auto;
+  }
+  
+  .eventos {
+    width: 70%;    
+    margin: 10px auto;
+    display: grid;
+        
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto, auto);
+  }
+
+
+  .payMethod--1,
+  .payMethod--2,
+  .payMethod--3 { 
+  width: 120px;
+  height: 120px;
+  padding: 0;
+ }
+
+ .payMethod--p {
+  font-size: 0.6em;
+  font-weight: 500;
+  text-align: center;
+  
+}
+
+.payMethod--li {
+  list-style: none;
+  text-align: center;
+  font-weight:200;
+}
+
+
+}

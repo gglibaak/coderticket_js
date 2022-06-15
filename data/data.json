@@ -1,0 +1,34 @@
+[
+    { 
+        "id": 1,
+        "bandName": "INXS",
+        "place": "Wembley Stadium",
+        "dayHour": "Sábado 13 Julio 16:00Hs",
+        "imgSrc": "eventos__cards--img1",
+        "price": "200"
+    },
+    {
+        "id": 2,
+        "bandName": "QUEEN",
+        "place": "Wembley Stadium",
+        "dayHour": "Sábado 13 Julio 13:00Hs",
+        "imgSrc": "eventos__cards--img2",
+        "price": "350"
+     },
+     {
+        "id": 3,
+        "bandName": "DIRE STRAITS",
+        "place": "Arco Arena",
+        "dayHour": "Martes 30 Junio 19:00Hs",
+        "imgSrc": "eventos__cards--img3",
+        "price": "210"
+    },
+    { 
+        "id": 4,
+        "bandName": "AC/DC",
+        "place": "Civic Auditorium, Oakland CA",
+        "dayHour": "Miércoles 8 Septiembre 20:00Hs",
+        "imgSrc": "eventos__cards--img4",
+        "price": "280"
+    }
+]

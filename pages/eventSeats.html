@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/sytle.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="icon" href="../assets/favicon.ico" />
+    <title>Coderticket</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html" class="logo">CODER<span>TICKET</span></a>
+        <nav>
+            <ul>
+                <li>Iniciar Sesion</li>
+                <li>Mas Eventos</li>                
+            </ul>
+            <label style="display: block;" > ☰ </label>
+        </nav>
+    </header>
+<div class="container">
+
+     <div class="titulo">
+        <h1 class="titulo--h1">EVENTNAME</h1>
+    </div>
+
+    <div class= "eventInfo">
+        <i class="fa-solid fa-masks-theater eventInfo--icon"></i>
+        <p class="eventInfo--eventName">Nombre del Evento: <span>EVENTNAME</span></p>
+        <i class="fa-solid fa-location-dot eventInfo--icon"></i>
+        <p class="eventInfo--eventPlace">Lugar: <span>EVENTPLACE</span></p>
+        <i class="fa-solid fa-calendar eventInfo--icon"></i>
+        <p class="eventInfo--eventDate">Fecha: <span>EVENTDATE</span></p>
+    </div>          
+
+    <hr>
+
+    <h3>Seleccione su Butaca</h3>
+
+    <div class="stage">Escenario</div>
+
+    <div class="seatSelectorContainer">
+        <div class="seatSelectorContainer--seat">1</div>
+        <div class="seatSelectorContainer--seat">2</div>
+        <div class="seatSelectorContainer--seat">3</div>
+        <div class="seatSelectorContainer--seat">4</div>
+        <div class="seatSelectorContainer--seat">5</div>
+        <div class="seatSelectorContainer--seat">6</div>
+        <div class="seatSelectorContainer--seat">7</div>
+        <div class="seatSelectorContainer--seat">8</div>
+        <div class="seatSelectorContainer--seat">9</div>
+        <div class="seatSelectorContainer--seat">10</div>
+        <div class="seatSelectorContainer--seat seat-Sold">11</div>
+        <div class="seatSelectorContainer--seat">12</div>
+        <div class="seatSelectorContainer--seat">13</div>
+        <div class="seatSelectorContainer--seat">14</div>
+        <div class="seatSelectorContainer--seat">15</div>
+        <div class="seatSelectorContainer--seat">16</div>
+        <div class="seatSelectorContainer--seat">17</div>
+        <div class="seatSelectorContainer--seat">18</div>
+        <div class="seatSelectorContainer--seat">19</div>
+        <div class="seatSelectorContainer--seat">20</div>
+        <div class="seatSelectorContainer--seat">21</div>
+        <div class="seatSelectorContainer--seat">22</div>
+        <div class="seatSelectorContainer--seat">23</div>
+        <div class="seatSelectorContainer--seat seat-Sold">24</div>
+        <div class="seatSelectorContainer--seat seat-Sold">25</div>
+        <div class="seatSelectorContainer--seat">26</div>
+        <div class="seatSelectorContainer--seat">27</div>
+        <div class="seatSelectorContainer--seat">28</div>
+        <div class="seatSelectorContainer--seat">29</div>
+        <div class="seatSelectorContainer--seat">30</div>
+    </div>
+
+    <h3 class="detail--h3" style="display: none">Detalle de Selección</h3>
+
+    <div class="detail" style="display: none">
+        <p class="detail--qty">Cantidad: <span></span></p>
+        <p class="detail--seat">Silas Seleccionadas: <span></span></p>
+        <p class="detail--Monto">Subtotal: <span></span></p>
+        <p class="detail--SC">Cargo Servicio de Venta (%10): <span></span></p>
+        <p class="detail--total">Total: <span></span></p>
+        
+    </div>
+    <div class="buyBtn detail--button" style="display: none">Confirmar Seleccion</div>
+    <!-- <div class="buyBtn">Comprar</div> -->
+    <h3 class="payMethod--h3"style="display: none" >Seleccione el Método de Pago</h3>
+
+    <div class="payMethod" style="display: none" >
+        <div class="payMethod--1">
+            <p class="payMethod--p">EFECTIVO</p>
+            <ul class="payMethod--ul">
+                <li class="payMethod--li">SALDO DISPONIBLE</li>                
+                <li class="payMethod--li payMethod--Mount1"></li>                
+            </ul>
+        </div>
+        <div class="payMethod--2">
+            <p class="payMethod--p">TARJETA DE DÉBITO</p>
+            <ul class="payMethod--ul">
+                <li class="payMethod--li">SALDO DISPONIBLE</li>                
+                <li class="payMethod--li payMethod--Mount2"></li>                
+            </ul>
+        </div>
+        <div class="payMethod--3">
+            <p class="payMethod--p">TARJETA DE CRÉDITO</p>
+            <ul class="payMethod--ul">
+                <li class="payMethod--li">SALDO DISPONIBLE</li>                
+                <li class="payMethod--li payMethod--Mount3"></li>                
+            </ul>
+        </div>
+    </div>
+    
+</div>
+
+
+<footer class="footer">
+    <p class="footer--title">Coderticket</p>
+    <p class="footer--subtitle">Proyecto Final Comision #37110</p>
+</footer>
+<script src="../js/app2.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>
